@@ -21,7 +21,6 @@ mongoose.connect(
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
-
 app.use("/auth", authRoute);
 app.use("/users", userRouter);
 
