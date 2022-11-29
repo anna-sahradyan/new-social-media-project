@@ -35,12 +35,20 @@ router.delete("/:id", async (req, res) => {
         }
 
 
-    }
-    else {
+    } else {
         return res.status(403).json("You can delete only your account!");
     }
 })
 //!GET  A USER
+router.get("/:id", async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id);
+        const { password, updatedAt, ...other } = user._doc;
+        res.status(200).json(other);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 //!FOLLOW  A USER
 //!UNFOLLOW  A USER
 module.exports = router;
