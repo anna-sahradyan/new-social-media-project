@@ -25,7 +25,7 @@ app.use(helmet());
 app.use(morgan("common"));
 app.use("/auth", authRoute);
 app.use("/users", userRouter);
-app.use("/post", postRouter);
+app.use("/posts", postRouter);
 
 
 app.listen(4000, () => {
