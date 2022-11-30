@@ -6,7 +6,7 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 const authRoute = require("./routes/auth");
 const userRouter = require("./routes/user");
-//const bodyParser = require("body-parser");
+const postRouter = require("./routes/post");
 
 dotenv.config();
 
@@ -19,13 +19,13 @@ mongoose.connect(
 );
 
 //middleware
-//app.use(bodyParser.urlencoded({extended:true,//parameterLimit:100000,limit:"500mb"}));
-// app.use(bodyParser.json());
+
 app.use(express.json())
 app.use(helmet());
 app.use(morgan("common"));
 app.use("/auth", authRoute);
 app.use("/users", userRouter);
+app.use("/post", postRouter);
 
 
 app.listen(4000, () => {
