@@ -21,6 +21,7 @@ export const Right = styled.div`
   flex: 4;
   align-items: center;
   justify-content: space-around;
+  color: white;
 `;
 export const Left = styled.div`
   display: flex;
@@ -76,7 +77,7 @@ export const Icons = styled.div`
 export const PersonIcon = styled.div`
   position: absolute;
   display: flex;
-  margin-left: -300px;
+  margin-left: -290px;
   flex: 1;
 
 `;
@@ -102,8 +103,8 @@ export const Span = styled.span`
   border-radius: 50%;
   color: white;
   position: absolute;
-  top: 10px;
-  right: -15px;
+  top: -5px;
+  right: -9px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,5 +115,8 @@ export const Img = styled.img`
   display: flex;
   flex: 1;
   margin-left: 300px;
-  position: absolute; 
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 `;
