@@ -1,10 +1,11 @@
 import React from 'react';
 import "./feedStyle"
+import {Container} from "./feedStyle";
 const Feed = () => {
     return (
-        <div>
-            
-        </div>
+        <Container>
+            this is feed
+        </Container>
     );
 };
 

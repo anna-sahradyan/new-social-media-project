@@ -1,10 +1,11 @@
 import React from 'react';
 import "./rightStyle"
+import {Container} from "./rightStyle";
 const RightBar = () => {
     return (
-        <div>
-            
-        </div>
+        <Container>
+            this is rightbar
+        </Container>
     );
 };
 
