@@ -1,6 +1,6 @@
 import React from 'react';
-import "./sidebarStyl"
-import {Button, Container, Hr, Li, List, Span, Wrapper, Img} from "./sidebarStyl";
+import "./sidebarStyle"
+import {Button, Container, Hr, Li, List, Span, Wrapper, Img} from "./sidebarStyle";
 import {
     RssFeed,
     Chat,

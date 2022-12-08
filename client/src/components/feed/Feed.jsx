@@ -1,10 +1,15 @@
 import React from 'react';
 import "./feedStyle"
-import {Container} from "./feedStyle";
+import {Container, Wrapper} from "./feedStyle";
+import Share from "../share/Share";
+
 const Feed = () => {
     return (
         <Container>
-            this is feed
+            <Wrapper>
+                <Share/>
+            </Wrapper>
+
         </Container>
     );
 };
