@@ -1,5 +1,19 @@
 import React from 'react';
-import {Bottom, Center, Container, Img, ImgHeart, ImgLike, ImgPost, Left, Right, Span, Top, Wrapper} from "./postStyle";
+import {
+    Bottom,
+    Center,
+    Container,
+    Img,
+    ImgHeart,
+    ImgLike,
+    ImgPost,
+    Left,
+    Right,
+    Span,
+    SpanComment,
+    Top,
+    Wrapper
+} from "./postStyle";
 import { MoreVert } from "@material-ui/icons";
 const Post = () => {
     return (
@@ -17,7 +31,7 @@ const Post = () => {
                         </Right>
                     </Top>
                     <Center>
-                        <Span>post</Span>
+                        <Span>My post</Span>
                         <ImgPost src={"/img/post1.jpg"}/>
                     </Center>
                     <Bottom>
@@ -27,7 +41,7 @@ const Post = () => {
                             <Span>10 people liked it</Span>
                         </Left>
                         <Right>
-                            <Span>10 comments </Span>
+                            <SpanComment>10 comments </SpanComment>
                         </Right>
                     </Bottom>
                 </Wrapper>

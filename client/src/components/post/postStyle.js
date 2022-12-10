@@ -18,6 +18,13 @@ export const Span = styled.span`
 
 
 `;
+export const SpanComment = styled.span`
+  font-size: 15px;
+  border-bottom: 1px dashed grey;
+ cursor: pointer;
+
+
+`;
 export const Top = styled.div`
   display: flex;
   align-items: center;
@@ -51,12 +58,19 @@ export const Center = styled.div`
 `;
 export const Bottom = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
- 
+
 `;
 export const ImgHeart = styled.img`
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
 
 `;
 export const ImgLike = styled.img`
-
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
 `;

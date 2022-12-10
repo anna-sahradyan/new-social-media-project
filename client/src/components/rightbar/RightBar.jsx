@@ -1,10 +1,16 @@
 import React from 'react';
 import "./rightStyle"
-import {Container} from "./rightStyle";
+import {Container, Day, Img, Span} from "./rightStyle";
+
 const RightBar = () => {
     return (
         <Container>
-            this is rightbar
+            <Wrapper>
+                <Day>
+                    <Img/>
+                    <Span></Span>
+                </Day>
+            </Wrapper>
         </Container>
     );
 };
