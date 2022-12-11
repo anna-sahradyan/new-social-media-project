@@ -18,6 +18,11 @@ export const Span = styled.span`
 
 
 `;
+export const SpanPost = styled.span`
+  font-size: 15px;
+  font-weight: 500;
+  
+`;
 export const SpanComment = styled.span`
   font-size: 15px;
   border-bottom: 1px dashed grey;
@@ -37,6 +42,9 @@ export const ImgPost = styled.img`
   max-height: 500px;
   object-fit: contain;
 `;
+export const Center = styled.div`
+  margin: 10px;
+`;
 export const Img = styled.img`
   width: 40px;
   height: 40px;
@@ -53,9 +61,7 @@ export const Right = styled.div`
 
 
 `;
-export const Center = styled.div`
-  margin: 20px 0;
-`;
+
 export const Bottom = styled.div`
   display: flex;
   justify-content: space-between;

@@ -10,12 +10,12 @@ import {
     Left,
     Right,
     Span,
-    SpanComment,
+    SpanComment, SpanPost,
     Top,
     Wrapper
 } from "./postStyle";
 import { MoreVert } from "@material-ui/icons";
-const Post = () => {
+const Post = ({post}) => {
     return (
         <>
             <Container>
@@ -31,17 +31,17 @@ const Post = () => {
                         </Right>
                     </Top>
                     <Center>
-                        <Span>My post</Span>
-                        <ImgPost src={"/img/post1.jpg"}/>
+                        <SpanPost>{post?.desc}</SpanPost>
+                        <ImgPost src={post.photo}/>
                     </Center>
                     <Bottom>
                         <Left>
                             <ImgHeart src={"/img/heart.png"}/>
                             <ImgLike src={"/img/like.png"}/>
-                            <Span>10 people liked it</Span>
+                            <Span>{post.like} people liked it</Span>
                         </Left>
                         <Right>
-                            <SpanComment>10 comments </SpanComment>
+                            <SpanComment>{post.comments}comments </SpanComment>
                         </Right>
                     </Bottom>
                 </Wrapper>

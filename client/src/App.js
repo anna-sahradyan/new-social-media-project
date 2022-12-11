@@ -10,16 +10,13 @@ import {ToastContainer} from "react-toastify";
 const App = () => {
     return (<>
         <ToastContainer/>
-        <div className={"wrapper"}>
-            <div className={"main"}>
-                <Routes>
-                    <Route path={"/"} element={<Home/>}/>
-                    <Route path={"/login"} element={<Login/>}/>
-                    <Route path={"/profile/:username"} element={<Profile/>}/>
-                    <Route path={"/register"} element={<Register/>}/>
-                </Routes>
-            </div>
-        </div>
+        <Routes>
+            <Route path={"/"} element={<Home/>}/>
+            <Route path={"/login"} element={<Login/>}/>
+            <Route path={"/profile/:username"} element={<Profile/>}/>
+            <Route path={"/register"} element={<Register/>}/>
+        </Routes>
+
     </>);
 };
 
