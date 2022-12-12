@@ -14,7 +14,9 @@ import {
     Top,
     Wrapper
 } from "./postStyle";
-import { MoreVert } from "@material-ui/icons";
+import {MoreVert} from "@material-ui/icons";
+import {Users} from "../../data";
+
 const Post = ({post}) => {
     return (
         <>
@@ -23,8 +25,8 @@ const Post = ({post}) => {
                     <Top>
                         <Left>
                             <Img src={"/img/person4.jpg"} alt={"person"}/>
-                            <Span>Anna Paruryan</Span>
-                            <Span>5 minutes ago</Span>
+                            <Span>{Users.filter((u) => u.id === post.userId)[0].username}</Span>
+                            <Span>{post.data}</Span>
                         </Left>
                         <Right>
                             <MoreVert/>

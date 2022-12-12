@@ -13,10 +13,10 @@ import {
     RightWrapper,
     Span,
     SpanOnline, SpanUser,
-    Wrapper
+
 } from "./rightStyle";
 
-const RightBar = () => {
+const RightBar = ({profile}) => {
     return (
         <Container>
             <RightWrapper>
