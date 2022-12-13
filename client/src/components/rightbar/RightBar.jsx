@@ -6,15 +6,14 @@ import {
     H,
     Img,
     ImgBirthday,
-    ImgLi,
-    ImgList,
-    Li,
     List,
     RightWrapper,
     Span,
-    SpanOnline, SpanUser,
+
 
 } from "./rightStyle";
+import {Users} from "../../data";
+import Online from "../online/Online";
 
 const RightBar = ({profile}) => {
     return (
@@ -29,13 +28,8 @@ const RightBar = ({profile}) => {
                 <ImgBirthday src={"/img/birthday.jpg"} alt={"birthday"}/>
                 <H>Online Friends</H>
                 <List>
-                    <Li>
-                    <ImgList>
-                        <ImgLi src={"/img/person5.jpg"} alt={"person"}></ImgLi>
-                        <SpanOnline></SpanOnline>
-                    </ImgList>
-                    <SpanUser>John Doe</SpanUser>
-                </Li>
+                    {Users.map((item,index)=>  (<Online key={`${item}_${index}`} user={item}/>))}
+
                 </List>
             </RightWrapper>
         </Container>

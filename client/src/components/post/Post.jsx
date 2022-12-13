@@ -24,7 +24,7 @@ const Post = ({post}) => {
                 <Wrapper>
                     <Top>
                         <Left>
-                            <Img src={"/img/person4.jpg"} alt={"person"}/>
+                            <Img src={Users.filter((u) => u.id ===post.userId)[0].profilePicture}/>
                             <Span>{Users.filter((u) => u.id === post.userId)[0].username}</Span>
                             <Span>{post.data}</Span>
                         </Left>
@@ -43,7 +43,7 @@ const Post = ({post}) => {
                             <Span>{post.like} people liked it</Span>
                         </Left>
                         <Right>
-                            <SpanComment>{post.comments}comments </SpanComment>
+                            <SpanComment>{post.comments}comments</SpanComment>
                         </Right>
                     </Bottom>
                 </Wrapper>

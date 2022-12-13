@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 60px;
 
+  
+
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -13,6 +15,7 @@ export const Wrapper = styled.div`
   position: sticky;
   top: 0;
   background-color: #1877f2;
+  z-index: 999;
 
 `;
 

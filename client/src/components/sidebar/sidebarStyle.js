@@ -5,14 +5,19 @@ export const Container = styled.div`
   flex: 3;
   height: calc(100vh - 50px);
   overflow-y: scroll;
+  position: sticky;
+  top: 50px;
+
   &::-webkit-scrollbar {
     width: 10px;
-   
+
   }
-  &::-webkit-scrollbar-track{
+
+  &::-webkit-scrollbar-track {
     background-color: #f1f1f1f1;
   }
-  &::-webkit-scrollbar-thumb{
+
+  &::-webkit-scrollbar-thumb {
     background-color: #1877f2;
     border-radius: 10px;
   }
