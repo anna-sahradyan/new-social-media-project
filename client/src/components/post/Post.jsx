@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
     Bottom,
     Center,
@@ -18,13 +18,20 @@ import {MoreVert} from "@material-ui/icons";
 import {Users} from "../../data";
 
 const Post = ({post}) => {
+    const [like, setLike] = useState(post.like);
+    const [isLiked, setIsLiked] = useState(false);
+    const likeHandler = () => {
+        setLike(isLiked ? like - 1 : like + 1);
+        setIsLiked(!isLiked)
+    }
+
     return (
         <>
             <Container>
                 <Wrapper>
                     <Top>
                         <Left>
-                            <Img src={Users.filter((u) => u.id ===post.userId)[0].profilePicture}/>
+                            <Img src={Users.filter((u) => u.id === post.userId)[0].profilePicture}/>
                             <Span>{Users.filter((u) => u.id === post.userId)[0].username}</Span>
                             <Span>{post.data}</Span>
                         </Left>
@@ -38,9 +45,9 @@ const Post = ({post}) => {
                     </Center>
                     <Bottom>
                         <Left>
-                            <ImgHeart src={"/img/heart.png"}/>
-                            <ImgLike src={"/img/like.png"}/>
-                            <Span>{post.like} people liked it</Span>
+                            <ImgHeart src={"/img/heart.png"} alt={"heart"} onClick={likeHandler}/>
+                            <ImgLike src={"/img/like.png"} alt={"like"} onClick={likeHandler}/>
+                            <Span>{like} people liked it</Span>
                         </Left>
                         <Right>
                             <SpanComment>{post.comments}comments</SpanComment>
