@@ -2,6 +2,7 @@ import React from 'react';
 import {ImgLi, ImgList, Li, SpanOnline, SpanUser} from "../rightbar/rightStyle";
 
 const Online = ({user}) => {
+
     return (
         <>
             <Li>

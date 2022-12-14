@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes,Navigate} from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import Profile from "./Pages/Profile/Profile";
@@ -14,9 +14,11 @@ const App = () => {
         <Routes>
             <Route path={"/"} element={<Home/>}/>
             <Route path={"/login"} element={<Login/>}/>
-            <Route path={"/profile/:username"} element={<Profile/>}/>
             <Route path={"/register"} element={<Register/>}/>
-            <Route path={"/profile"} element={<Profile/>}/>
+            <Route path={"/profile/:username"} element={<Profile/>}/>
+
+            {/*<Route path="/register" element =*/}
+            {/*    {user ? <Navigate replace to= "/" /> : <Register />}/>*/}
         </Routes>
 
     </>

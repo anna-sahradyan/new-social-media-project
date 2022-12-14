@@ -60,23 +60,23 @@ const RightBar = ({profile}) => {
                     </Following>
                     <Following>
                         <ImgFollowing src={"/img/person2.jpg"} alt={"person"}/>
-                        <SpanFollowing>Anna Paruryan</SpanFollowing>
+                        <SpanFollowing>Jane Tomline</SpanFollowing>
                     </Following>
                     <Following>
                         <ImgFollowing src={"/img/person3.jpg"} alt={"person"}/>
-                        <SpanFollowing>Anna Paruryan</SpanFollowing>
+                        <SpanFollowing>Alex Balduino</SpanFollowing>
                     </Following>
                     <Following>
                         <ImgFollowing src={"/img/person4.jpg"} alt={"person"}/>
-                        <SpanFollowing>Anna Paruryan</SpanFollowing>
+                        <SpanFollowing>Toma Scot</SpanFollowing>
                     </Following>
                     <Following>
                         <ImgFollowing src={"/img/person5.jpg"} alt={"person"}/>
-                        <SpanFollowing>Anna Paruryan</SpanFollowing>
+                        <SpanFollowing>Henry Bocman</SpanFollowing>
                     </Following>
                     <Following>
                         <ImgFollowing src={"/img/person6.jpg"} alt={"person"}/>
-                        <SpanFollowing>Anna Paruryan</SpanFollowing>
+                        <SpanFollowing>Tomas Broue</SpanFollowing>
                     </Following>
                 </Followings>
             </>
