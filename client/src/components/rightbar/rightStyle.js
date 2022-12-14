@@ -15,9 +15,10 @@ export const Day = styled.div`
 
 `;
 export const H = styled.h4`
- margin-bottom: 20px;
+  margin-bottom: 20px;
 
 `;
+
 export const Img = styled.img`
   width: 40px;
   height: 40px;
@@ -43,7 +44,7 @@ export const Li = styled.li`
   display: flex;
   margin-bottom: 15px;
   align-items: center;
-  
+
 `;
 export const ImgList = styled.div`
   position: relative;
@@ -62,11 +63,58 @@ export const SpanOnline = styled.span`
   border-radius: 50%;
   background-color: limegreen;
   position: absolute;
-  top:-1px;
+  top: -1px;
   right: 0;
   border: 2px solid white;
 `;
 export const SpanUser = styled.span`
   font-weight: 500;
-  
+
 `;
+//!ProfileRightBar
+export const Followings = styled.div`
+  display: grid;
+  grid-template: 1fr/repeat(3,150px);
+  grid-auto-flow: row;
+`;
+export const Following = styled.div`
+  margin-bottom:20px ;
+`;
+export const Info = styled.div`
+  margin-bottom: 30px;
+ `;
+export const Item = styled.div`
+  margin-bottom: 10px;
+
+`;
+export const SpanKey = styled.span`
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+
+`;
+
+export const SpanValue = styled.span`
+  font-weight: 300;
+
+`;
+export const ImgFollowing = styled.img`
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid gray;
+
+`;
+export const Title = styled.h4`
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+`;
+export const SpanFollowing = styled.span`
+  display: grid;
+  grid-template: 1fr/repeat(3,150px);
+  grid-auto-flow: row;
+`;
+

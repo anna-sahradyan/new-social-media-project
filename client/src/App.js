@@ -8,16 +8,19 @@ import 'react-toastify/dist/ReactToastify.css';
 import {ToastContainer} from "react-toastify";
 
 const App = () => {
-    return (<>
+    return (
+        <>
         <ToastContainer/>
-        {/*<Routes>*/}
-        {/*    <Route path={"/"} element={<Home/>}/>*/}
-        {/*    <Route path={"/login"} element={<Login/>}/>*/}
-        {/*    <Route path={"/profile/:username"} element={<Profile/>}/>*/}
-        {/*    <Route path={"/register"} element={<Register/>}/>*/}
-        {/*</Routes>*/}
-<Profile/>
-    </>);
+        <Routes>
+            <Route path={"/"} element={<Home/>}/>
+            <Route path={"/login"} element={<Login/>}/>
+            <Route path={"/profile/:username"} element={<Profile/>}/>
+            <Route path={"/register"} element={<Register/>}/>
+            <Route path={"/profile"} element={<Profile/>}/>
+        </Routes>
+
+    </>
+    );
 };
 
 export default App;
